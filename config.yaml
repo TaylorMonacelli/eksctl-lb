@@ -12,7 +12,7 @@ iam:
         name: aws-load-balancer-controller
         namespace: kube-system
       attachPolicyARNs:
-        # TODO: change the policy to https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.1.2/docs/install/iam_policy.json
+        # TODO: change the policy to https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.4.4/docs/install/iam_policy.json
         - arn:aws:iam::aws:policy/PowerUserAccess
 
 addons:
