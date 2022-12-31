@@ -29,7 +29,7 @@ availabilityZones: ["us-east-1a", "us-east-1b", "us-east-1c"]
 
 nodeGroups:
   - name: k8s-workers-us-east-1a
-    instanceType: m5.xlarge
+    instanceType: m5.large
     minSize: 1
     maxSize: 5
     availabilityZones: ["us-east-1a"]
@@ -44,7 +44,7 @@ nodeGroups:
         cloudWatch: true
 
   - name: k8s-workers-us-east-1b
-    instanceType: m5.xlarge
+    instanceType: m5.large
     minSize: 1
     maxSize: 5
     availabilityZones: ["us-east-1b"]
@@ -59,7 +59,7 @@ nodeGroups:
         cloudWatch: true
 
   - name: k8s-workers-us-east-1c
-    instanceType: m5.xlarge
+    instanceType: m5.large
     minSize: 1
     maxSize: 5
     availabilityZones: ["us-east-1c"]
