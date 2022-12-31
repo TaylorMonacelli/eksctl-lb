@@ -1,23 +1,19 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
+  name: ingress-2048
   annotations:
     kubernetes.io/ingress.class: public
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    nginx.ingress.kubernetes.io/rewrite-target: /$2
-    nginx.ingress.kubernetes.io/configuration-snippet: |
-      rewrite ^(/dashboard)$ $1/ redirect;
-    nginx.ingress.kubernetes.io/backend-protocol: HTTPS
-  name: dashboard
 spec:
   rules:
   - http:
       paths:
-      - path: /dashboard(/|$)(.*)
+      - path: /*
         pathType: Prefix
         backend:
           service:
-            name: kubernetes-dashboard
+            name: service-2048
             port:
-              number: 443
+              number: 80
