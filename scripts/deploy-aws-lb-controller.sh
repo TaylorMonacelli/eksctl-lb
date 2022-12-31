@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -euo pipefail
+set -xeuo pipefail
 
 helm repo add eks https://aws.github.io/eks-charts
 

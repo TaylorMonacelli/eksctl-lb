@@ -1,5 +1,5 @@
 #!/bin/bash
 
-set -euo pipefail
+set -xeuo pipefail
 
 eksctl create cluster -f config.yaml

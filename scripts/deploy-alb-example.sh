@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -euo pipefail
+set -xeuo pipefail
 
 kubectl apply -n default -f ./k8s-manifests/alb
 

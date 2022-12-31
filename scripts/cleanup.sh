@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -euo pipefail
+set -xeuo pipefail
 
 echo "Removing the nlb example..."
 kubectl delete -n default -f ./k8s-manifests/nlb
