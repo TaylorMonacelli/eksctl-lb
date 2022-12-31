@@ -13,15 +13,15 @@ spec:
         app.kubernetes.io/name: app-2048
     spec:
       containers:
-        - image: alexwhen/docker-2048
-          imagePullPolicy: IfNotPresent
-          name: app-2048
-          ports:
-            - containerPort: 80
-          resources:
-            requests:
-              cpu: 100m
-              memory: 128Mi
-            limits:
-              cpu: 100m
-              memory: 128Mi
+      - image: alexwhen/docker-2048
+        imagePullPolicy: IfNotPresent
+        name: app-2048
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 100m
+            memory: 128Mi
